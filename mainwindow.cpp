@@ -35,6 +35,9 @@ void MainWindow::doParse()
     this->ui->outputText->setText(this->ui->inputText->toPlainText());
 }
 
+/*!
+ * \brief MainWindow::copyToClipboard Make a copy of the output text inside the clipboard
+ */
 void MainWindow::copyToClipboard()
 {
     QClipboard *clip = QApplication::clipboard();
