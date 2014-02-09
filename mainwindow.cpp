@@ -2,12 +2,14 @@
 #include "ui_mainwindow.h"
 
 #include <QClipboard>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    optionForm = new FormOption();
 }
 
 MainWindow::~MainWindow()
@@ -29,10 +31,7 @@ void MainWindow::clearAll()
  */
 void MainWindow::doParse()
 {
-    /*
-     * For now is only a copy
-     */
-    this->ui->outputText->setText(this->ui->inputText->toPlainText());
+    this->ui->outputText->setText(parser.executeParsing(this->ui->inputText->toPlainText()));
 }
 
 /*!
@@ -73,4 +72,10 @@ void MainWindow::on_actionExit_triggered()
 void MainWindow::on_execute_clicked()
 {
     this->doParse();
+}
+
+void MainWindow::on_actionOptions_triggered()
+{
+    optionForm->setOptions(parser.getOptions());
+    optionForm->show();
 }

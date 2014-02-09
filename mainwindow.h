@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+#include "parser.h"
+#include "formoption.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -33,8 +36,13 @@ private slots:
 
     void on_execute_clicked();
 
+    void on_actionOptions_triggered();
+
 private:
     Ui::MainWindow *ui;
+    FormOption *optionForm;
+    Parser parser;
+    t_option option;
 };
 
 #endif // MAINWINDOW_H
