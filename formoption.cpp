@@ -6,6 +6,7 @@ FormOption::FormOption(QWidget *parent) :
     ui(new Ui::FormOption)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Option");
 }
 
 FormOption::~FormOption()

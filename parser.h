@@ -18,6 +18,10 @@ public:
     QString executeParsing(QString inputText);
     int optionToNumber();
 
+    // main methods
+    QString removeAll(QString inputText);
+    QString keepParagraphs(QString inputText);
+
     t_option *getOptions();
 private:
     t_option options;

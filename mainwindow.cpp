@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     optionForm = new FormOption();
+    this->setWindowTitle("\\n-Remover");
 }
 
 MainWindow::~MainWindow()
