@@ -38,6 +38,8 @@ private slots:
 
     void on_actionOptions_triggered();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     FormOption *optionForm;

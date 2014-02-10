@@ -74,6 +74,13 @@
          </widget>
         </item>
         <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Copy to Clipboard</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QPushButton" name="execute">
           <property name="text">
            <string>Execute</string>
@@ -92,7 +99,7 @@
      <x>0</x>
      <y>0</y>
      <width>797</width>
-     <height>25</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

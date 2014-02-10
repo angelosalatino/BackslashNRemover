@@ -79,3 +79,8 @@ void MainWindow::on_actionOptions_triggered()
     optionForm->setOptions(parser.getOptions());
     optionForm->show();
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    this->copyToClipboard();
+}
